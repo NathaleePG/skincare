@@ -255,6 +255,64 @@ li span{
     position:relative;
     width:100px;
 }
+
+#main > ul{
+    position:relative;
+    clear:both;
+    margin-left:12%;
+    list-style-type:none;
+}
+#main > ul > li{
+    width:400px;
+    border:2px solid rgb(133, 136, 141);
+}
+
+#im1{
+    width:100%;
+    height:400px;
+    background: url("bg1.jpg") center;
+    margin-bottom:25px;
+}
+
+#im1 > a{
+    position:relative;
+    background-color:rgba(255, 255, 255, 0.6);
+    width:200px;
+    font-size:2em;
+    margin:auto;
+    top:100px;
+    padding:15px 0;
+    border:1px solid black;
+    display:block;
+    color:black;
+    text-decoration:none;
+}
+
+#im1 > a:hover{
+    background-color:rgba(255, 255, 255, 0.7);
+}
+
+#main ul li > a{
+    color:black;
+    font-size:1.5em;
+    margin-bottom:10px;
+    display:inline-block;
+}
+
+#main > ul > li > p{
+    font-style:italic;
+}
+
+.date{
+    color: rgb(133, 136, 141);
+    margin-bottom:15px;
+}
+
+.description{
+    font-size:1.2em;
+    padding-bottom:5px;
+}
+
 #root{
     position:relative;
     width:90%;
@@ -355,6 +413,16 @@ li span{
 @media screen and (max-width:575px) {
     #containerSec form{
         display:none;
+    }
+}
+
+@media screen and (max-width:510px){
+    #main > ul{
+        margin-left:0;
+    }
+    #main > ul > li{
+        width:90%;
+        margin:25px 5%;
     }
 }
 
